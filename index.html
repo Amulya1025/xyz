@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f766e">
+  <title>HealthGuard | Early Health Risk Awareness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">+</span><div><strong>HealthGuard</strong><small>Early Health Risk Awareness</small></div></div>
+    <span class="privacy-pill"><span aria-hidden="true">●</span> Private by design</span>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PREVENTION STARTS WITH AWARENESS</p>
+        <h1>Understand your health habits.<br><span>Take a healthier next step.</span></h1>
+        <p class="hero-text">Answer a few simple questions about everyday habits and common warning signs. HealthGuard highlights areas you may want to pay attention to and offers practical prevention guidance.</p>
+        <div class="hero-note"><span aria-hidden="true">ⓘ</span> This is an awareness tool, not a medical diagnosis.</div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="circle circle-one"></div><div class="circle circle-two"></div><div class="health-card"><div class="heart">♥</div><div class="pulse-line"></div><strong>Your health matters</strong><small>Small steps can help</small></div></div>
+    </section>
+
+    <div class="layout">
+      <section class="panel assessment-panel" aria-labelledby="assessment-title">
+        <div class="section-heading"><div><p class="eyebrow">PERSONAL CHECK-IN</p><h2 id="assessment-title">Your health snapshot</h2></div><span class="step-label">About 2 minutes</span></div>
+        <p class="muted">Choose the answers that best describe you. You can skip any question you do not want to answer.</p>
+        <form id="health-form">
+          <fieldset>
+            <legend><span class="question-number">01</span> Age group</legend>
+            <div class="option-grid">
+              <label class="option"><input type="radio" name="age" value="under18"><span>Under 18</span></label>
+              <label class="option"><input type="radio" name="age" value="18-39"><span>18–39</span></label>
+              <label class="option"><input type="radio" name="age" value="40-59"><span>40–59</span></label>
+              <label class="option"><input type="radio" name="age" value="60plus"><span>60+</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span class="question-number">02</span> How often are you physically active for 30 minutes?</legend>
+            <div class="option-grid">
+              <label class="option"><input type="radio" name="activity" value="often"><span>5+ days/week</span></label>
+              <label class="option"><input type="radio" name="activity" value="some"><span>1–4 days/week</span></label>
+              <label class="option"><input type="radio" name="activity" value="rare"><span>Rarely</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span class="question-number">03</span> How much sleep do you usually get?</legend>
+            <div class="option-grid">
+              <label class="option"><input type="radio" name="sleep" value="good"><span>7–9 hours</span></label>
+              <label class="option"><input type="radio" name="sleep" value="low"><span>Less than 7 hours</span></label>
+              <label class="option"><input type="radio" name="sleep" value="high"><span>More than 9 hours</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span class="question-number">04</span> How often do you eat fruits or vegetables?</legend>
+            <div class="option-grid">
+              <label class="option"><input type="radio" name="food" value="daily"><span>Daily</span></label>
+              <label class="option"><input type="radio" name="food" value="sometimes"><span>Sometimes</span></label>
+              <label class="option"><input type="radio" name="food" value="rare"><span>Rarely</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span class="question-number">05</span> Do you use tobacco or nicotine products?</legend>
+            <div class="option-grid">
+              <label class="option"><input type="radio" name="tobacco" value="no"><span>No</span></label>
+              <label class="option"><input type="radio" name="tobacco" value="yes"><span>Yes</span></label>
+              <label class="option"><input type="radio" name="tobacco" value="prefer"><span>Prefer not to say</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span class="question-number">06</span> How would you describe your stress lately?</legend>
+            <div class="option-grid">
+              <label class="option"><input type="radio" name="stress" value="low"><span>Low / manageable</span></label>
+              <label class="option"><input type="radio" name="stress" value="medium"><span>Sometimes high</span></label>
+              <label class="option"><input type="radio" name="stress" value="high"><span>Often high</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span class="question-number">07</span> Are you exposed to smoke, dust, or heavy air pollution often?</legend>
+            <div class="option-grid">
+              <label class="option"><input type="radio" name="air" value="low"><span>Rarely</span></label>
+              <label class="option"><input type="radio" name="air" value="some"><span>Sometimes</span></label>
+              <label class="option"><input type="radio" name="air" value="high"><span>Often</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span class="question-number">08</span> Do you have a symptom that is new, persistent, or worrying?</legend>
+            <p class="field-help">Examples: unusual breathlessness, ongoing pain, a persistent cough, unexplained weight change.</p>
+            <div class="option-grid">
+              <label class="option"><input type="radio" name="symptoms" value="no"><span>No</span></label>
+              <label class="option"><input type="radio" name="symptoms" value="yes"><span>Yes</span></label>
+              <label class="option"><input type="radio" name="symptoms" value="unsure"><span>Not sure</span></label>
+            </div>
+          </fieldset>
+
+          <div class="form-actions"><button type="submit" class="primary-btn">Review my snapshot <span aria-hidden="true">→</span></button><button type="reset" class="secondary-btn">Clear answers</button></div>
+          <p class="privacy-note"><span aria-hidden="true">🔒</span> Your answers are processed in this browser only. They are not uploaded or saved.</p>
+        </form>
+      </section>
+
+      <aside class="side-column">
+        <section class="panel result-panel" id="results" aria-labelledby="results-title" aria-live="polite">
+          <div class="result-icon" aria-hidden="true">♡</div>
+          <p class="eyebrow">YOUR SUMMARY</p>
+          <h2 id="results-title">Ready when you are</h2>
+          <p class="muted" id="result-intro">Complete the check-in to see a simple summary of habits and possible next steps.</p>
+          <div class="score-track" aria-label="Risk indicator"><div id="score-fill"></div></div>
+          <div class="score-caption"><span>Fewer flags</span><span>More areas to review</span></div>
+          <div id="result-content" class="result-content"><div class="empty-tip"><strong>What happens next?</strong><p>We’ll identify answers that may be worth reviewing and suggest practical, general prevention steps.</p></div></div>
+          <button type="button" class="secondary-btn full-btn" id="print-btn">Print / save summary</button>
+        </section>
+
+        <section class="panel urgent-panel">
+          <div class="urgent-symbol" aria-hidden="true">!</div>
+          <div><h3>When to get urgent help</h3><p>Seek emergency care immediately for severe trouble breathing, chest pain, fainting, signs of stroke, or another life-threatening emergency. Do not wait to complete this check-in.</p><p class="small-muted">In India, call 112 for emergency assistance.</p></div>
+        </section>
+
+        <section class="panel info-panel">
+          <h3>HealthGuard principles</h3>
+          <ul class="principles">
+            <li><span>✓</span><div><strong>Understandable</strong><small>Plain language and clear next steps.</small></div></li>
+            <li><span>✓</span><div><strong>Privacy-conscious</strong><small>No account, server, or data collection.</small></div></li>
+            <li><span>✓</span><div><strong>Accessible</strong><small>Keyboard-friendly and mobile responsive.</small></div></li>
+            <li><span>✓</span><div><strong>Offline-ready</strong><small>Runs locally after the files are downloaded.</small></div></li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+    <section class="disclaimer"><strong>Important limitation:</strong> This prototype uses a simple, illustrative rules-based indicator. It is not clinically validated, does not predict disease, and must not be used to diagnose, treat, or rule out a health condition. A healthcare professional can assess personal risks and recommend appropriate screening.</section>
+  </main>
+  <footer><span>HealthGuard · BUILDATHON 2.0 prototype</span><span>Awareness • Prevention • Privacy</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
